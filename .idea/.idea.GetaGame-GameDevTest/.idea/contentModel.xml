@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Fr3dy\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Fr3dy\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_GetaGame-GameDevTest.-1581132110.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Fr3dy\Documents\Unity\GetaGame-GameDevTest" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="GetaTest" t="Include">
+          <e p="Plugins" t="Include">
+            <e p="Pixelplacement" t="Include">
+              <e p="iTween" t="Include">
+                <e p="iTween.cs" t="Include" />
+                <e p="Sample" t="Include">
+                  <e p="MoveSample.cs" t="Include" />
+                  <e p="RotateSample.cs" t="Include" />
+                  <e p="SampleInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Kart" t="Include">
+              <e p="KartController.cs" t="Include" />
+              <e p="WheelSpring.cs" t="Include" />
+            </e>
+            <e p="RaceCore" t="Include">
+              <e p="FinishLine.cs" t="Include" />
+            </e>
+            <e p="TimeTrial" t="Include">
+              <e p="TimeTrialController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="GetaGame-GameDevTest.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
