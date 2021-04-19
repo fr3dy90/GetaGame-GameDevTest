@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class WheelSpring : MonoBehaviour
 {
-    [Header("Car RigidBody")] private Rigidbody rb;
+    [Header("Car RigidBody")] 
+    private Rigidbody rb;
 
     [Header("Suspension Physics")] public float distance = .8f;
     public LayerMask groundMask;
@@ -15,7 +16,6 @@ public class WheelSpring : MonoBehaviour
 
     [Header("Car Settings")] 
     public float maxSpeed;
-
     private float actualSpeed;
     public float driveForce;
     public float brakeForce;
@@ -25,11 +25,15 @@ public class WheelSpring : MonoBehaviour
 
     private float h, v;
 
+    [Header("Release Player")] 
+    public bool isPlay = false;
+
 
     private void Start()
     {
         rb = transform.GetComponent<Rigidbody>();
         drag = driveForce / maxSpeed;
+        isPlay = false;
     }
 
     private void Update()
@@ -56,11 +60,14 @@ public class WheelSpring : MonoBehaviour
         float sideWaySpeed = Vector3.Dot(rb.velocity, transform.right);
         Vector3 sidewayFriction = -transform.right * (sideWaySpeed / Time.deltaTime);
         rb.AddForce(sidewayFriction*grip, ForceMode.Acceleration);
-        
-        TurnCar(h);
-        if (isGrounded)
+
+        if (isPlay)
         {
-            AccelerateCar(v);
+            TurnCar(h);
+            if (isGrounded)
+            {
+                AccelerateCar(v);
+            }
         }
     }
 
